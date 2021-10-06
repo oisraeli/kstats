@@ -10,7 +10,7 @@ kstats
 $ cp config.cfg.example config.cfg
 ```
 
-### Run docker
+### Run locally (docker in the near future)
 ```
 # Clone:
 git clone https://github.com/oisraeli/kstats
