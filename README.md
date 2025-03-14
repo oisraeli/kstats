@@ -1,43 +1,43 @@
-kstats
-=====
-
-`kstats` is the collective name of scripts (`pullMSKStats.py`) which will pull raw usage data from MSK.
-
-## `pullMSKStats.py`
-
-### Copy config file and edit
-```
-$ cp config.cfg.example config.cfg
-```
-
-### Run locally (docker in the near future)
-```
-# Clone:
+# 📊 kstats
+ 
+`kstats` is a collection of scripts (including `pullMSKStats.py`) designed to pull raw usage data from MSK.
+ 
+## 🚀 Installation and Setup
+ 
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/oisraeli/kstats
-
-# Prepare virtualenv:
-cd ecstats
+cd kstats
+```
+ 
+### 2️⃣ Set Up a Virtual Environment
+```bash
 mkdir .env
 virtualenv .env
-
-# Activate virtualenv
-. .env/bin/activate
-
-# Install necessary libraries
+source .env/bin/activate
+```
+ 
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-
-# When finished
-deactivate
 ```
-
-To run the script copy the configuration file and edit:
-
-```
+ 
+### 4️⃣ Configure the Script
+Copy the example configuration file and update it as needed:
+```bash
 cp config.cfg.example config.cfg
 ```
-
-Execute 
-
-```
+ 
+### 5️⃣ Run the Script
+Execute the script with the configuration file:
+```bash
 python pullMSKStats.py -c config.cfg
 ```
+ 
+### 6️⃣ Deactivate the Virtual Environment (When Finished)
+```bash
+deactivate
+```
+ 
+## 🔮 Future Plans
+- 🐳 Docker support (coming soon)
